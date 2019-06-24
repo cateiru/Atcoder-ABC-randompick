@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<title>Atcoderランダム選択</title>
+	</head>
+	<body>
+		<script>
+		function clicked(){
+			if (!document.createElement || !document.getElementById) return;
+
+			var a = document.createElement("a");
+			var num = Math.floor(Math.random() * 131);
+			if (num <= 99){
+				num = String(0) + String(num);
+			}
+			a.href = "https://atcoder.jp/contests/abc" + String(num);
+			var str = document.createTextNode("[" + String(num) + "]");
+			a.appendChild(str)
+			document.getElementById("link").append(a)
+			
+			return;
+		}
+		</script>
+	</body>
+		<h1>AtCoderコンテストランダム選択ツール</h1>
+		<input type="button" onclick="clicked()" value="生成">
+		<p id="link"></p>
+		
+		
+</html>
