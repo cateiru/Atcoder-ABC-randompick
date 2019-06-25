@@ -10,12 +10,7 @@
 			
 			var a = document.createElement("a");
 			var num = Math.floor(Math.random() * 131);
-			if (num <= 10){
-				num = String(0) + String(0) + String(num);
-			}
-			else if (num <= 99){
-				num = String(0) + String(num);
-			}
+			num = ( '000' + num ).slice( -3 );
 			a.href = "https://atcoder.jp/contests/abc" + String(num);
 			var str = document.createTextNode("[" + String(num) + "]");
 			a.appendChild(str)
