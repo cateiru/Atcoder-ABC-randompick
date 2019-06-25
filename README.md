@@ -1,4 +1,5 @@
-# Atcoder-ABC-randompic
+# Atcoder-ABC-randompick
+
 
 AtcoderのABC問題をランダムでリンクとして出力するプログラムです。
 
