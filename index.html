@@ -15,7 +15,7 @@
 			//生成した乱数をゼロパディングする
 			num = ( '000' + num ).slice( -3 );
 			//aタグにhrefを追加
-			a.href = "https://atcoder.jp/contests/abc" + String(num);
+			a.href = "https://atcoder.jp/contests/abc" + String(num) + "/tasks";
 			//valueを追加
 			var str = document.createTextNode("[" + String(num) + "]");
 			a.appendChild(str)
