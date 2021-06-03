@@ -11,7 +11,7 @@
 			//aタグの読み込み
 			var a = document.createElement("a");
 			//数字0~131の乱数を生成
-			var num = Math.floor(Math.random() * 132);
+			var num = Math.floor(Math.random() * 202) + 1;
 			//生成した乱数をゼロパディングする
 			num = ( '000' + num ).slice( -3 );
 			//aタグにhrefを追加
@@ -32,7 +32,7 @@
 		<input type="button" onclick="clicked()" value="生成">
 		<p id="link"></p>
 		<br>
-		<p>みんな！Twitterとかフォローしてくれよな！！</p>
+		<p>みんな！見てくれよな！！</p>
 		<p>↓↓↓↓↓↓</p>
-		<a href="https://motton.co/cateiru" target="_blank">クリックして！</a>
+		<a href="https://cateiru.com" target="_blank">クリックして！</a>
 </html>
